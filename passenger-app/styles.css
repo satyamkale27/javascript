@@ -26,6 +26,6 @@
   .people button:hover{
     background-color: black;
     transition: 0.2;
-    color: white;
+    color: blue;
   }
   
