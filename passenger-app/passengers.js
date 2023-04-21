@@ -11,4 +11,6 @@
  function save() {
     let countstrr = count + " - "
     strel.innerText = strel.innerText + countstrr
+   countEl.innerText = 0
+   count = 0
  }
