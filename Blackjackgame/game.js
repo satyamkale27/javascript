@@ -6,7 +6,7 @@ let isalive = true
 
 if(sum < 22) {
     console.log("Do you want to draw a new card")
-} else if(sum === 22){
+} else if(sum === 2){
 console.log("wohoo ! you got Blackjack")
 hasblackjack = true
 }
