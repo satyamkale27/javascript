@@ -16,6 +16,7 @@ button{
     border-radius: 6px; 
     height: 30px;
     width: 150px;
-    background: goldenrod;
+    background: #daa520;
     color: #016f32;
+    font-weight: bold;
 }
