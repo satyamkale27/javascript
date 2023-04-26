@@ -10,6 +10,10 @@ let isalive = true
 let message = ""
 
 function startgame() {
+    rendergame()
+}
+
+function rendergame() {
     if(sum < 22) {
         message = "Do you want to draw a new card ?"
     } else if(sum === 2){
@@ -23,4 +27,10 @@ function startgame() {
     instructionEl.textContent = message
     sumEl.textContent = "sum:" + sum
     cardEl.textContent = "cards:" + fristcard + " " + secondcard
+}
+
+function newcard() {
+    let card = 7
+    sum = sum + card
+    rendergame()
 }
