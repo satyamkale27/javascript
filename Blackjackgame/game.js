@@ -4,6 +4,7 @@ let cardEl = document.getElementById("cardcount")
 
 let fristcard = 10
 let secondcard = 11
+let cardss = [fristcard, secondcard]
 let sum = fristcard + secondcard
 let hasblackjack = false    // this is boolean type value learned in this project //
 let isalive = true
@@ -26,11 +27,13 @@ function rendergame() {
     }
     instructionEl.textContent = message
     sumEl.textContent = "sum:" + sum
-    cardEl.textContent = "cards:" + fristcard + " " + secondcard
+     cardEl.textContent = "cards:" + cardss[0] + " " + cardss[1]
+    
 }
 
 function newcard() {
     let card = 7
     sum = sum + card
-    rendergame()
+    cardss.push(card)
+     rendergame()
 }
