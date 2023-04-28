@@ -3,21 +3,28 @@ let sumEl = document.getElementById("summ")
 let cardEl = document.getElementById("cardcount")
 
 let fristcard = 10
-let secondcard = 11
+let secondcard = 4
 let cardss = [fristcard, secondcard]
 let sum = fristcard + secondcard
 let hasblackjack = false    // this is boolean type value learned in this project //
 let isalive = true
 let message = ""
+let values = 0
+console.log(cardss)
 
 function startgame() {
     rendergame()
 }
 
 function rendergame() {
-    if(sum < 22) {
+    cardEl.textContent = cardss
+
+
+
+    sumEl.textContent = "sum:" + sum
+    if(sum < 20) {
         message = "Do you want to draw a new card ?"
-    } else if(sum === 2){
+    } else if(sum === 21){
     message = "wohoo ! you got Blackjack"
     hasblackjack = true
     }
@@ -26,8 +33,7 @@ function rendergame() {
         isalive = false
     }
     instructionEl.textContent = message
-    sumEl.textContent = "sum:" + sum
-     cardEl.textContent = "cards:" + cardss[0] + " " + cardss[1]
+    //  cardEl.textContent = "cards:" + cardss[0] + " " + cardss[1]
     
 }
 
@@ -35,5 +41,7 @@ function newcard() {
     let card = 7
     sum = sum + card
     cardss.push(card)
-     rendergame()
+    values = values + 1
+    console.log(values)
+      rendergame()
 }
