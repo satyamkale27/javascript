@@ -2,24 +2,37 @@ let instructionEl = document.getElementById("instruction")
 let sumEl = document.getElementById("summ")
 let cardEl = document.getElementById("cardcount")
 
-let fristcard = 10
-let secondcard = 4
-let cardss = [fristcard, secondcard]
-let sum = fristcard + secondcard
+let sum 
+let cardss = []
 let hasblackjack = false    // this is boolean type value learned in this project //
-let isalive = true
+let isalive = false
 let message = ""
 let values = 0
 console.log(cardss)
 
+function randomnumber() {
+    let randomnums =  Math.floor( Math.random() * 13) + 1
+    if( randomnums > 10) {
+        return 10
+    }
+    else if( randomnums === 1) {
+     return 1
+    }
+    else {
+        return randomnums
+    }
+}
+
 function startgame() {
+    let fristcard = randomnumber()
+    let secondcard = randomnumber()
+    cardss = [fristcard, secondcard]
+    let sum = fristcard + secondcard
     rendergame()
 }
 
 function rendergame() {
     cardEl.textContent = cardss
-
-
 
     sumEl.textContent = "sum:" + sum
     if(sum < 20) {
@@ -33,12 +46,12 @@ function rendergame() {
         isalive = false
     }
     instructionEl.textContent = message
-    //  cardEl.textContent = "cards:" + cardss[0] + " " + cardss[1]
+    
     
 }
 
 function newcard() {
-    let card = 7
+    let card = randomnumber()
     sum = sum + card
     cardss.push(card)
     values = values + 1
