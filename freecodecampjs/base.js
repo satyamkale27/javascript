@@ -12,3 +12,8 @@ let result = text1 < text2;
 console.log(result);
 // answer is true //
 
+// what will happen if string and numbers will added together lets see it //
+let a = 9 + "satyam"
+console.log(a);
+// it will treat number as a string 9satyam //
+
