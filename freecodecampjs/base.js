@@ -16,4 +16,8 @@ console.log(result);
 let a = 9 + "satyam"
 console.log(a);
 // it will treat number as a string 9satyam //
+// one more example //
+let x = "Volvo" + 16 + 4;
+console.log(x);
+// answer is Volvo164 //
 
