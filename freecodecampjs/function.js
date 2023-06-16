@@ -11,4 +11,13 @@ function show() {
     console.log(loc);
 }
 show(); // output 9 //
- console.log(loc);  // output is error //
+ // console.log(loc);  // output is error //
+
+
+ // outer variable //
+ let usernamee = "namee"; // it is outer variable //
+ function names() {
+    console.log(usernamee);
+ }
+ names(); // output namee //
+ console.log(usernamee);  // output namee //
