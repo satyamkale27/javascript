@@ -8,9 +8,22 @@
 <body>
     <h1 id="learn">learning DOM</h1>
 
+    <ul>avenger</ul>
+    <ul>avtar</ul>
+    <ul>spiderman</ul>
+
     <script>
         const learnel = document.querySelector('#learn');
         learnel.style.color = 'red';
+        learnel.style.fontSize = '4rem';
+
+     //   create a element //
+
+        const ul = document.querySelector('ul');
+        const li = document.createElement('li');  // this will create element //
+        ul.append(li)           // append adds the element //
+        // here we will add content //
+        li.innerText = 'star wars';    
     </script>
 </body>
 </html>
