@@ -13,9 +13,12 @@
     <ul>avtar</ul>
     <ul>spiderman</ul>
 
-    <li class="styless"></li>
-    <li class="styless"></li>
-    <li class="styless"></li>
+    <div class="fruits">
+    <li class="styless">mango</li>
+    <li class="styless">apple</li>
+    <li class="styless">banana</li> 
+    </div>
+
     <script>
         const learnel = document.querySelector('#learn');
         learnel.style.color = 'red';
@@ -25,9 +28,11 @@
 
         const ul = document.querySelector('ul');
         const li = document.createElement('li');  // this will create element //
-        ul.append(li)           // append adds the element //
+          ul.append(li)          // append adds the element //
         // here we will write content //
         li.innerText = 'star wars';    
+
+       
         
     </script>
 </body>
