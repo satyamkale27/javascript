@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center{
+    height: 500px;
+    width: 400px;
+    background-color: aqua;
+    text-align: center;
+    margin-left: 500px;
+}
