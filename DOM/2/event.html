@@ -13,11 +13,20 @@
    <button class="btns">click</button>
     </div>
     <script>
+
  const buttontwo = document.querySelector('.btn');
 function alertbtn() {
       alert("you got hacked");
 };
 buttontwo.addEventListener("click", alertbtn);
+
+// mouse hover //
+const mousehover = document.querySelector('.btns');
+function stylebtn() {
+mousehover.style.color = "red";
+};
+mousehover.addEventListener("mouseover", stylebtn);
+
     </script>
 </body>
 </html>
