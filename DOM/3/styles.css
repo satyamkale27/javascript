@@ -9,6 +9,7 @@
     list-style: none;
     margin-left: 500px;
     background-color: green;
+    border-radius: 5px;
 }
 li{
     padding: 10px;
