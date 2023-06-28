@@ -14,3 +14,14 @@ time: 5,
 };
 
 console.log(per["likes birds"]);
+// set get delete users //
+
+let learn = {};
+// set 
+ learn["science"] = true; // stored boolean 
+learn["flower rose"] = 'smell';
+// get 
+console.log(learn["flower rose"]);
+console.log(learn["science"]);
+ // delete
+// delete learn["science"];  it deletes the learn["science"]; 
