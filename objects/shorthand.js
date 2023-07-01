@@ -2,7 +2,7 @@ function mydata(name, age) {
 
 return {
 name: name,
-age: age
+age: age,
 
 };
 
