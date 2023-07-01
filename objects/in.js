@@ -12,3 +12,4 @@ weight: 52
 };
 console.log("age" in smt ); // true smt.age exists  // 
 console.log("height" in smt ); // false smt.height does not exists //
+// tip:- use in property insted of using undefined //
