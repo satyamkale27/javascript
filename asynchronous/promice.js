@@ -23,4 +23,4 @@ return new Promise( (resolve, reject)=>{
 
  };
 
- order(2000, ()=>console.log(`${stocks.Fruits[0]}`))
+ order(2000, ()=>console.log(`${stocks.Fruits[0]} was selected`))
