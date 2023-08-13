@@ -63,3 +63,14 @@ return new Promise( (resolve, reject)=>{
         console.log(`ice cream was served`)
     })
 } )
+
+
+.catch( ()=>{
+    console.log("customer left")
+} )
+
+
+.finally( ()=>{
+console.log("day ended shop is closed")
+
+})
