@@ -3,3 +3,7 @@ what is quoka - quoks show the js output on code editor without using node js
 |go to search tab upside|
  and write  >quoka.js start on current file 
  just > is enough remaining command will automaticaly auto seen and compleated
+
+shortcut 
+press ctrl dont leav button and then press k and q 
+ctrl+k+ctrl+q
