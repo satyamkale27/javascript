@@ -10,3 +10,6 @@ if (mission === "learn") {
 } else {
   console.log(`Is ${mission} really more fun?`);
 }
+
+//  PS E:\web2023\javascript\node> node argv.js explore
+//output:-  Is explore really more fun?
