@@ -6,7 +6,7 @@ import("node-fetch").then((module) => {
 
   console.log(fetchPromise);
 
-  // fetchPromise.then((response) => {
-  //   console.log(`Received response: ${response.status}`);
-  // });
+  fetchPromise.then((response) => {
+    console.log(`Received response: ${response.status}`);
+  });
 });
